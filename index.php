@@ -48,5 +48,25 @@ print ("Hello, World!");
 */
 #####################################################
 
+// comparison operators
+/*
+== equal to (checks if two values are equal) example: 5 == "5"=> true
+=== identical (checks if two values are equal and of the same type) example: 5 === "5" => false
+!= not equal to (checks if two values are not equal) example: 5 != 6 => true
+!== not identical (checks if two values are not equal or not of the same type) example: 5 !== "5" => true
+> greater than (checks if the left value is greater than the right value) example: 5 > 3 => true
+<  less than (checks if the left value is less than the right value) example: 3 < 5 => true
+>= greater than or equal to (checks if the left value is greater than or equal to the right value) example: 5 >= 5 => true
+<= less than or equal to (checks if the left value is less than or equal to the right value) example: 3 <= 5 => true
+<> not equal to (checks if two values are not equal) example: 5 <> 6 => true  is the sane as 5 != 6
+*/
+#####################################################
 
+// logical operators
+/*
+and (&&) - returns true if both operands are true         1      1
+or (||) - returns true if at least one operand is true        1      0     |  0      1
+xor - returns true if exactly one operand is true            1      0     |  0      1 
+not (!) - negates the value of the operand (true becomes false, false becomes true)
+*/
 ?>
