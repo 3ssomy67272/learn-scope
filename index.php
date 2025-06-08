@@ -67,6 +67,6 @@ print ("Hello, World!");
 and (&&) - returns true if both operands are true         1      1
 or (||) - returns true if at least one operand is true        1      0     |  0      1
 xor - returns true if exactly one operand is true            1      0     |  0      1 
-not (!) - negates the value of the operand (true becomes false, false becomes true)
+not (!) - negates the value of the operand (true becomes false, false becomes true)       0   0
 */
 ?>
