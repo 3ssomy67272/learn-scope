@@ -69,4 +69,30 @@ or (||) - returns true if at least one operand is true        1      0     |  0 
 xor - returns true if exactly one operand is true            1      0     |  0      1 
 not (!) - negates the value of the operand (true becomes false, false becomes true)       0   0
 */
+#####################################################
+
+// control flow statements
+/*if statement - executes a block of code if a condition is true
+if (condition) {
+    // code to execute if condition is true
+} elseif (another_condition) {
+    // code to execute if another_condition is true
+} else {
+    // code to execute if none of the conditions above are true
+}
+switch statement - selects one of many blocks of code to execute based on the value of a variable
+switch (variable) {
+    case value1:
+        // code to execute if variable equals value1
+        break;
+    case value2:
+        // code to execute if variable equals value2
+        break;
+    default:
+        // code to execute if variable does not match any case
+}
+*/
+#####################################################
+
+
 ?>
