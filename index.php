@@ -81,12 +81,12 @@ if (condition) {
     // code to execute if none of the conditions above are true
 }
 switch statement - selects one of many blocks of code to execute based on the value of a variable
-switch (variable) {
-    case value1:
-        // code to execute if variable equals value1
+switch (variable    [the vat that the code gonna check on]) {
+    case condition 1:   
+        // code to execute if variable equals condotion 1
         break;
-    case value2:
-        // code to execute if variable equals value2
+    case condition 2:
+        // code to execute if variable equals condition 2
         break;
     default:
         // code to execute if variable does not match any case
@@ -94,5 +94,56 @@ switch (variable) {
 */
 #####################################################
 
+// ternary operator
+/*
+The ternary operator is a shorthand way of writing an if-else statement. It has the following syntax:
 
+condition ? code_if_true : code_if_false;   ===     if (condition) {
+                                                                                                code_if_true;
+                                                                                            } else {
+                                                                                                code_if_false;
+                                                                                            }
+*/
+###########################################################
+
+// loops
+/*
+for loop - executes a block of code a specified number of times
+for (initialization; condition; increment[update]) {
+    // code to execute in each iteration
+}
+while loop - executes a block of code as long as a condition is true
+while (condition) {
+    // code to execute as long as condition is true
+}
+do-while loop - executes a block of code at least once and then continues as long as a condition is true
+do {
+    // code to execute at least once
+} while (condition);
+*/
+###########################################################
+
+// arrays
+/*
+Arrays are used to store multiple values in a single variable. They can hold different types of data, such as numbers, strings, and objects. 
+$variable_name = [value1, value2, value3]; // indexed array
+$variable_name = ["key1" => "value1", "key2" => "value2"]; // associative array  # helpful to use when you want to access the values by their keys instead of their index.
+$variablee_name = [["value1", "value2"], ["value3", "value4"]]; // multidimensional array    # simbly an array of arrays.
+*/
+###########################################################
+#problem solving example: sum of diagonal elements in a 2D array :fire:
+// $nest_array = [
+//     [1, 2, 3, 4],
+//     [5, 6, 7, 8],
+//     [9, 10, 11, 12],
+//     [13, 14, 15, 16]
+// ];
+
+// $sum = 0;
+// for ($i=0; $i < count($nest_array); $i++) { 
+//     $sum += $nest_array[$i][$i];
+//     $sum += $nest_array[(count($nest_array) -$i)-1][$i];
+// }
+// echo "The sum of the diagonal elements is: " . $sum;
+###########################################################
 ?>
