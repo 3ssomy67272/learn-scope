@@ -146,4 +146,81 @@ $variablee_name = [["value1", "value2"], ["value3", "value4"]]; // multidimensio
 // }
 // echo "The sum of the diagonal elements is: " . $sum;
 ###########################################################
-?>
+
+// functions
+/*
+Functions are reusable blocks of code that perform a specific task. They can take parameters and return values.
+function function_name($parameter1, $parameter2) {
+    // code to execute when calling the function
+    return $value;                      // the return statement is used at the end of the function code, any code after the return statement will not be executed.
+}
+    */
+###########################################################
+// OOP (Object-Oriented Programming)
+/*
+OOP is a programming paradigm that uses objects to represent data and methods to manipulate that data. It allows for encapsulation, inheritance, and polymorphism.
+class ClassName {
+    public $property1; // public property
+    private $property2; // private property
+    protected $property3; // protected property
+
+    public function method1() {
+        // code for method1
+    }
+
+    private function method2() {
+        // code for method2
+    }
+
+    protected function method3() {
+        // code for method3
+    }
+    constructor is a special method that is called when an object is created from a class. It is used to initialize the object's properties.
+class ClassName {
+    public $property1;
+
+    public function __construct($value) {
+        $this->property1 = $value; // $this refers to the current object
+    }
+}
+    */
+// class User{
+//     public $haight;
+//     public $favfood;
+//     public function sport($sport) {
+//         echo "user's favourite sport is $sport ";
+//     }
+//     public function gf() {
+//         echo "the user has a GirtFriend ";
+//     }
+// }
+
+// $user1 = new User();
+
+// $user1 -> haight = "190Cm"; echo $user1->haight . "<br>";
+// $user1 -> favfood = "Pasta"; echo $user1->favfood . "<br>";
+// $user1 -> sport("karate");
+// $user1 -> gf();
+
+// $user2 = new User();
+// $user2 -> haight = "167Cm"; echo $user2 -> haight . "<br>";
+// $user2 -> favfood = "Chicken"; echo $user2 -> favfood . "<br>";
+// $user2 -> sport("football");
+
+# const example
+
+// class Person{
+//     public $name;
+//     public $age;
+//     public $gender;
+
+//     public function __construct($name, $age, $gender) {
+//         $this ->name = $name;
+//         $this ->age = $age;
+//         $this ->gender = $gender;
+//         echo $name, $age, $gender;
+//     }
+// }
+
+// $person1 = new Person("essam", 19, "male");    // new object named person1, it will imediatly call the function since it has __construct
+// $person2 = new Person("Morgan", 345, "male");    // new object named person2, it will imediatly call the function since it has __construct
