@@ -155,46 +155,46 @@ function function_name($parameter1, $parameter2) {
     return $value;                      // the return statement is used at the end of the function code, any code after the return statement will not be executed.
 }
     */
-###########################################################
-// OOP (Object-Oriented Programming)
-/*
-OOP is a programming paradigm that uses objects to represent data and methods to manipulate that data. It allows for encapsulation, inheritance, and polymorphism.
+    ###########################################################
+    // OOP (Object-Oriented Programming)
+    /*
+    OOP is a programming paradigm that uses objects to represent data and methods to manipulate that data. It allows for encapsulation, inheritance, and polymorphism.
 class ClassName {
     public $property1; // public property
     private $property2; // private property
     protected $property3; // protected property
-
+    
     public function method1() {
         // code for method1
-    }
+        }
 
-    private function method2() {
-        // code for method2
-    }
-
-    protected function method3() {
-        // code for method3
+        private function method2() {
+            // code for method2
+            }
+            
+            protected function method3() {
+                // code for method3
     }
     constructor is a special method that is called when an object is created from a class. It is used to initialize the object's properties.
-class ClassName {
-    public $property1;
-
-    public function __construct($value) {
-        $this->property1 = $value; // $this refers to the current object
-    }
-}
-    */
+    class ClassName {
+        public $property1;
+        
+        public function __construct($value) {
+            $this->property1 = $value; // $this refers to the current object
+            }
+            }
+            */
 // class User{
-//     public $haight;
-//     public $favfood;
-//     public function sport($sport) {
+    //     public $haight;
+    //     public $favfood;
+    //     public function sport($sport) {
 //         echo "user's favourite sport is $sport ";
 //     }
 //     public function gf() {
-//         echo "the user has a GirtFriend ";
-//     }
-// }
-
+    //         echo "the user has a GirtFriend ";
+    //     }
+    // }
+    
 // $user1 = new User();
 
 // $user1 -> haight = "190Cm"; echo $user1->haight . "<br>";
@@ -215,12 +215,60 @@ class ClassName {
 //     public $gender;
 
 //     public function __construct($name, $age, $gender) {
-//         $this ->name = $name;
-//         $this ->age = $age;
-//         $this ->gender = $gender;
-//         echo $name, $age, $gender;
-//     }
-// }
+    //         $this ->name = $name;
+    //         $this ->age = $age;
+    //         $this ->gender = $gender;
+    //         echo $name, $age, $gender;
+    //     }
+    // }
+    
+    // $person1 = new Person("essam", 19, "male");    // new object named person1, it will imediatly call the function since it has __construct
+    // $person2 = new Person("Morgan", 345, "male");    // new object named person2, it will imediatly call the function since it has __construct
+    ###########################################################
+// Global variables
+/*
+Global variables are variables that can be accessed from anywhere in the code, including inside functions. They are declared using the `global` keyword.
+$_SERVER - contains information about the server and the current request
+$_GET - contains data sent to the script via URL parameters
+$_POST - contains data sent to the script via HTTP POST method
+$_REQUEST - contains data from both $_GET and $_POST
+$_SESSION - used to store session variables
+$_COOKIE - used to store cookie variables
+$_FILES - used to access uploaded files
+$_ENV - contains environment variables
+$_GLOBALS - contains all global variables
+*/ 
+###########################################################
 
-// $person1 = new Person("essam", 19, "male");    // new object named person1, it will imediatly call the function since it has __construct
-// $person2 = new Person("Morgan", 345, "male");    // new object named person2, it will imediatly call the function since it has __construct
+// connect to the mysql database
+/*
+$servername = "localhost/or server_ip";
+$username = "your_username";
+$password = "your_password";
+$dbname = "your_database_name";
+
+$connect = new mysqli($servername, $username, $password, $dbname); // connection query
+*/
+//Database CRUD operations
+/*
+Create - insert data into the database 
+    - CREATE TABLE [tablename] (column1 datatype, column2 datatype, ...);
+Insert - insert data into the table
+    - INSERT INTO [tablename] (column1, column2, ...) VALUES (value1, value2, ...);
+Read - retrieve data from the table
+    - SELECT column1, column2, ... FROM [tablename] WHERE condition;
+Update - update existing data in the table
+    - UPDATE [tablename] SET column1 = value1, column2 = value2, ... WHERE condition;
+Delete - delete data from the table
+    - DELETE FROM [tablename] WHERE condition;
+*/
+###########################################################
+// FOREIGN KEYS
+/*
+Foreign keys are used to create a relationship between two tables in a database. They ensure referential integrity by linking a column in one table to the primary key of another table.
+    - CREATE TABLE [child_table] (
+        column1 datatype,
+        column2 datatype,
+        FOREIGN KEY (column_name_of_present table) REFERENCES [parent_table](primary_key_column)
+    );
+*/
