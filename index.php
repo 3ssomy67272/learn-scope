@@ -263,6 +263,7 @@ Delete - delete data from the table
     - DELETE FROM [tablename] WHERE condition;
 */
 ###########################################################
+
 // FOREIGN KEYS
 /*
 Foreign keys are used to create a relationship between two tables in a database. They ensure referential integrity by linking a column in one table to the primary key of another table.
@@ -271,4 +272,81 @@ Foreign keys are used to create a relationship between two tables in a database.
         column2 datatype,
         FOREIGN KEY (column_name_of_present table) REFERENCES [parent_table](primary_key_column)
     );
+*/
+###########################################################
+
+// SQL JOINs
+/*
+JOINs are used to combine rows from two or more tables based on a related column between them. There are several types of JOINs:
+INNER JOIN - returns only the rows that have matching values in both tables
+    - SELECT [columns] FROM [table1] INNER JOIN [table2] ON [table1.column_name] = [table2.column_name];
+LEFT JOIN - returns all rows from the left table and the matched rows from the right table, or NULL if there is no match
+    - SELECT [columns] FROM [table1] LEFT JOIN [table2] ON [table1.column_name] = [table2.column_name];
+RIGHT JOIN - returns all rows from the right table and the matched rows from the left table, or NULL if there is no match
+    - SELECT [columns] FROM [table1] RIGHT JOIN [table2] ON [table1.column_name] = [table2.column_name];
+FULL OUTER JOIN - returns all rows when there is a match in either left or right table records
+    - SELECT [columns] FROM [table1] FULL OUTER JOIN [table2] ON [table1.column_name] = [table2.column_name];
+cross join - returns the Cartesian product of two tables, i.e., all possible combinations of rows from both tables
+    - SELECT [columns] FROM [table1] CROSS JOIN [table2];
+    
+*/
+###########################################################
+// laravel
+/*
+Laravel is a PHP framework that provides a clean and elegant syntax for building web applications. It follows the MVC (Model-View-Controller) architectural pattern and includes features such as routing, middleware, authentication, and more.
+*/
+// To get started with Laravel, you can follow these steps:
+/*
+1. Install Composer: Laravel uses Composer for dependency management. You can download and install Composer from https://getcomposer.org/download/.
+2. Install Laravel: Once Composer is installed, you can create a new Laravel project by running the following command in your terminal: 
+    composer create-project laravel/laravel [project_name]
+3- setup the environment: After creating the project, you need to set up the environment variables. update the .env file in the root directory of your Laravel project with your database connection details and other configurations.
+4. Run the development server: You can start the Laravel development server by running the following command in your terminal:
+    php artisan serve
+*/
+############################################################
+
+// laravel resources file
+/*
+Laravel resources are used to manage the views, controllers, and other assets of your application. The `resources` directory contains the following subdirectories:
+*/
+
+############################################################
+// laravel routing
+/*
+Laravel routing allows you to define the URLs of your application and map them to specific controllers or actions. You can define routes in the `routes/web.php` file for web routes or `routes/api.php` for API routes.
+To define a route, you can use the following syntax:
+Route::get('/url', [ControllerName::class, 'methodName']);
+Route::post('/url', [ControllerName::class, 'methodName']);
+Route::view('/url', 'view.name'); // to return a view
+Route::redirect('/old-url', '/new-url'); // to redirect from one URL to another
+*/
+#############################################################
+// laravel yield and section
+/*
+In Laravel, `@yield` and `@section` are used to define and extend layouts in Blade templates.
+`@section` is used to define a section of content in a Blade template, while `@yield` is used to display that content in a layout.
+ex: <body>
+    <h3>hello essam this a template nav bar that will be used on all ur pages</h3>
+
+    @yield('content')
+
+
+    <h6>this is a template footer that will be used on all ur pages</h6>
+</body>
+-> this is the layout file, it will be used as a template for all the pages in the application.
+@extends('[layout fiel name that will extend this layout]')
+
+
+@section('title')
+    <title>Essam's page</title>
+@endsection
+
+@section('content')
+    <h1>Welcome to Essam's Page</h1>
+    <p>This is a custom page for Essam.</p>
+    <p>Feel free to customize this page as needed.</p>
+    <p>Enjoy your visit!</p>
+@endsection
+-> this is the page that will extend the layout file, it will be used to display the content of the page. and sections to add your own contents to the layout.
 */
