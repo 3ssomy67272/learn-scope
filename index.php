@@ -328,12 +328,12 @@ In Laravel, `@yield` and `@section` are used to define and extend layouts in Bla
 `@section` is used to define a section of content in a Blade template, while `@yield` is used to display that content in a layout.
 ex: <body>
     <h3>hello essam this a template nav bar that will be used on all ur pages</h3>
-
+    
     @yield('content')
-
-
+    
+    
     <h6>this is a template footer that will be used on all ur pages</h6>
-</body>
+    </body>
 -> this is the layout file, it will be used as a template for all the pages in the application.
 @extends('[layout fiel name that will extend this layout]')
 
@@ -349,4 +349,14 @@ ex: <body>
     <p>Enjoy your visit!</p>
 @endsection
 -> this is the page that will extend the layout file, it will be used to display the content of the page. and sections to add your own contents to the layout.
+*/
+#############################################################
+
+// laravel if and for loop statments
+/*
+they both exacly works like normal php code in line 79 and 109 of this file
+but what makes it amazing is you can use it on HTML balde file too
+check out laravel docs for the syntax and how to use
+https://laravel.com/docs/12.x/blade#loops
+https://laravel.com/docs/12.x/blade#if-statements
 */
